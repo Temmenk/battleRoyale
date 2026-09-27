@@ -37,6 +37,13 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
+  - ChangeScene
+  - AddKill
+  - DamageFlash
+  - Die
+  - Heal
+  - Initialize
+  - TakeDamage
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
