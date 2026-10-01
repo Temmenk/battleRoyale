@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CmaeraController : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
 
     [Header("Look Sensitivity")]

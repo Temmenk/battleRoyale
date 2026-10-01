@@ -1,35 +1,32 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Photon.Pun
+using Photon.Pun;
 
+public enum PickupType
+{
+    Health,
+    Ammo
+}
 public class Pickup : MonoBehaviour
 {
-    public enum PickupType
-    {
-        Health,
-        Ammo 
-    }
-
     public PickupType type;
     public int value;
-
-    [PunRPC]
-    public void Heal (int amountToHeal)
+    void OnTriggerEnter(Collider other)
     {
-        curHp = Mathf.Clamp(curHp + amountToHeal, 0, maxHp);
-
-        //update the health bar UI
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+        if (other.CompareTag("Player"))
+        {
+            // get the player
+            PlayerController player = GameManager.instance.GetPlayer(other.gameObject
+            );
+            if (type == PickupType.Health)
+                player.photonView.RPC("Heal", player.photonPlayer, value);
+            else if (type == PickupType.Ammo)
+                player.photonView.RPC("GiveAmmo", player.photonPlayer, value);
+            // destroy the object
+            PhotonNetwork.Destroy(gameObject);
+        }
     }
 }

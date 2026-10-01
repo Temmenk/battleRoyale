@@ -44,6 +44,12 @@ MonoBehaviour:
   - Heal
   - Initialize
   - TakeDamage
+  - GiveAmmo
+  - ImInGame
+  - SpawnBullet
+  - SpawnPlayer
+  - WinGame
+  - UpdateLobbyUI
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
