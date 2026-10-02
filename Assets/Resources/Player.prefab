@@ -37,7 +37,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1769147311081919717}
   - {fileID: 7451181642545036995}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -188,7 +187,7 @@ MonoBehaviour:
   dead: 0
   rig: {fileID: 2329303240550549008}
   weapon: {fileID: 0}
-  mr: {fileID: 0}
+  mr: {fileID: 421593614422836282}
 --- !u!114 &-5424242952772587422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,55 +227,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!1 &3783407721433419724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1769147311081919717}
-  - component: {fileID: 1600211368754530023}
-  m_Layer: 0
-  m_Name: CameraController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1769147311081919717
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3783407721433419724}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4638977, y: -0.8, z: -3.2142334}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3384487210856505736}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1600211368754530023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3783407721433419724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c875beb3a96ca438e1cb079f8b3e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  sensX: 0
-  sensY: 0
-  minY: 0
-  maxY: 0
-  spectatorMoveSpeed: 0
 --- !u!1 &8433168772600794508
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +238,7 @@ GameObject:
   - component: {fileID: 7451181642545036995}
   - component: {fileID: 6945910315176464588}
   - component: {fileID: 3007994354026500607}
+  - component: {fileID: 8472132875335684666}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -370,6 +321,23 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8433168772600794508}
   m_Enabled: 1
+--- !u!114 &8472132875335684666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8433168772600794508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c875beb3a96ca438e1cb079f8b3e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraController
+  sensX: 5
+  sensY: 5
+  minY: 5
+  maxY: 5
+  spectatorMoveSpeed: 10
 --- !u!1001 &5160481745871961167
 PrefabInstance:
   m_ObjectHideFlags: 0
