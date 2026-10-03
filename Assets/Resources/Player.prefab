@@ -186,7 +186,7 @@ MonoBehaviour:
   kills: 0
   dead: 0
   rig: {fileID: 2329303240550549008}
-  weapon: {fileID: 0}
+  weapon: {fileID: 8069862689459668599}
   mr: {fileID: 421593614422836282}
 --- !u!114 &-5424242952772587422
 MonoBehaviour:

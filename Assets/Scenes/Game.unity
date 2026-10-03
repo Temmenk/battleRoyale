@@ -2303,7 +2303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8227218918306931735, guid: 431f0afec4760474fade86894a2d3806, type: 3}
       propertyPath: sceneViewId
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8838436246826743539, guid: 431f0afec4760474fade86894a2d3806, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5339,6 +5339,7 @@ GameObject:
   - component: {fileID: 2115074999}
   - component: {fileID: 2115075001}
   - component: {fileID: 2115075000}
+  - component: {fileID: 2115075002}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -5396,8 +5397,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   postGameTime: 3
-  playerPrefabLocation: 
-  players: []
+  playerPrefabLocation: Player
+  players:
+  - {fileID: 767184602941326276, guid: b7fb969590f0875458291b09c9e0c529, type: 3}
   spawnPoints:
   - {fileID: 1053136268}
   - {fileID: 1024603509}
@@ -5405,6 +5407,23 @@ MonoBehaviour:
   - {fileID: 1477621957}
   - {fileID: 1646366843}
   alivePlayers: 0
+--- !u!114 &2115075002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115074998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a81e93098d08a1429a8f2902a189b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameUI
+  healthBar: {fileID: 480692081}
+  playerInfoText: {fileID: 295862608}
+  ammoText: {fileID: 2113131928}
+  winText: {fileID: 1044917874}
+  winBackground: {fileID: 501755267}
 --- !u!1001 &3696476907622586577
 PrefabInstance:
   m_ObjectHideFlags: 0

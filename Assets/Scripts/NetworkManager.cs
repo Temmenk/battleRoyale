@@ -14,7 +14,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     void Awake()
     {
         instance = this;
-     //   DontDestroyOnLoad(gameObject); 
+        DontDestroyOnLoad(gameObject); 
     }
 
 
@@ -25,7 +25,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         //connect to the master server
         PhotonNetwork.ConnectUsingSettings();
     }
-public override void OnConnectedToMaster()
+    
+    public override void OnConnectedToMaster()
     {
         PhotonNetwork.JoinLobby();
     }
