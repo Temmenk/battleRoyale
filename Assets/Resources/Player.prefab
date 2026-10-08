@@ -159,10 +159,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4be254946fe60a40aebe9dd44cf497c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
-  damage: 0
-  curAmmo: 10
-  maxAmmo: 10
-  bulletSpeed: 50
+  damage: 20
+  curAmmo: 100
+  maxAmmo: 100
+  bulletSpeed: 100
   shootRate: 1
   bulletPrefab: {fileID: 6931583815875556753, guid: 4d90373c1c726214aaca7f68ee4270c7, type: 3}
   bulletSpawnPos: {fileID: 4693812927814975984}
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8914579e3197070438c33c3d5be7e4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
+  moveSpeed: 8
   jumpForce: 5
   rig: {fileID: 2329303240550549008}
   id: 0
