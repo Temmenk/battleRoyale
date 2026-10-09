@@ -2990,7 +2990,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3386,7 +3386,7 @@ MonoBehaviour:
   playerListText: {fileID: 968168842}
   roomInfoText: {fileID: 1876999168}
   startGameButton: {fileID: 346051824}
-  roomListContainer: {fileID: 665121787}
+  roomListContainer: {fileID: 313921113}
   roomButtonPrefab: {fileID: 6693101657514884118, guid: 0d88eabf4e464e74dbe599aceb0ecb6d, type: 3}
 --- !u!1 &1102434938
 GameObject:
@@ -4862,7 +4862,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.08176088, g: 0.07533314, b: 0.07533314, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
